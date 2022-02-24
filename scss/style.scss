@@ -14,18 +14,18 @@ body {
 header {
     background: #16A0AA;
     position: relative;
+    padding: 40px 0px;
+
+    .container {
+        position: relative;
+    }
+    
 }
 
 .header-back-image{
     position: absolute;
     top: 74px;
     right: 123px;
-}
-
-.container {
-    margin: 0;
-    padding: 40px 33px;
-    max-width: 100%;
 }
 
 .visuall-impaired-version-btn, .select__head {
@@ -212,15 +212,11 @@ header {
 }
 
 .header-center-block {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 98px;
-
 
     form.search {
         position: relative;
-        width: 570px;
+        width: 100%;
+        max-width: 570px;
         margin: 0 auto;
 
         button {
@@ -297,7 +293,7 @@ header {
         margin: 20px 18px 0px;
     
         &:first-child {
-            margin-left: 33px;
+            margin-left: 0px;
         }
     
         .dropbtn {
@@ -373,40 +369,12 @@ header {
         }
     }
   }
-  
-  @media screen and (max-width: 768px) {
-    .header-nav a:not(:first-child), .dropdown .dropbtn {
-      display: none;
-    }
-    .header-nav a.icon {
-      float: right;
-      display: block;
-    }
-
-    .header-nav.responsive {position: relative;}
-    .header-nav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .header-nav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .header-nav.responsive .dropdown {float: none;}
-    .header-nav.responsive .dropdown-content {position: relative;}
-    .header-nav.responsive .dropdown .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-}
 
 // Main
 
 .body {
     margin-top: 20px;
+    padding: 40px 0px;
 
     .sidebar-block {
         margin-bottom: 42px;
@@ -678,6 +646,7 @@ header {
                 color: #313841;
                 margin-bottom: 12px;
                 max-width: 491px;
+                width:80%;
 
                 a {
                     text-decoration: none;
@@ -860,6 +829,7 @@ footer {
     font-weight: bold;
     font-size: 16px;
     line-height: 22px;
+    padding: 40px 0px;
 
     .col-lg-4, .col-md-12 {
         position: relative;
@@ -1141,5 +1111,118 @@ footer {
         padding: 10px 23px;
         outline: none;
         border: none;
+    }
+}
+
+// MD
+
+
+
+// SM
+
+@media screen and (max-width: 768px) {
+    .header-nav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .header-nav {
+        a.icon {
+            float: right;
+            display: block;
+            margin-right: 10px;
+            font-size: 24px !important;
+        }
+    }
+
+    .dropdown {
+        .dropdown-content {
+            transition: opacity 0.1s,visibility 0.1s;
+        }
+    } 
+    
+    .header-nav.responsive {
+        position: relative;
+
+        .icon {
+            position: absolute;
+            right: 10px;
+            top: 0;
+            font-size: 24px !important;
+        }
+
+        a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown {
+            float: none;
+
+            &:first-child {
+                margin-left: 18px;
+            }
+
+            .dropbtn {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+        .dropdown-content {
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            border-radius: 0px;
+        }
+    }
+
+    .header-btns-block {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .person_icon {
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+
+    .login_btn {
+        margin: 0px 0px 0px 5px;
+    }
+
+    .sidebar-block { 
+        max-width: 100% !important;
+    }
+
+    .header-back-image {
+        display: none;
+    }
+
+    .header-center-block {
+
+        .col-lg-3 {
+            text-align: center;
+        }
+
+        .header-title {
+            margin-top: 15px;
+        }
+    }
+
+    .video-item-block {
+        .thumb-wrap {
+            width: 100% !important;
+        }    
+    }
+
+    .right-sidebar-block {
+        align-items: center;
+    }
+    
+    .tabcontent-item {
+        .views {
+            right: 30px !important;
+        }
     }
 }

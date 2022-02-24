@@ -13,7 +13,6 @@
 </head>
 <body>
     <header>
-        <img src="img/header-background-image.svg" alt="background" class="header-back-image">
         <div class="container">
             <div class="header-btns-block">
                 <a href="#" class="visuall-impaired-version-btn">АА</a>
@@ -34,14 +33,19 @@
                 </a>
             </div>
             <div class="header-center-block">
-                <div style="width: 232px;height: 308px;"></div>
-                <div>
-                    <h1 class="header-title">Alpharabi</h1>
-                    <h2 class="header-subtitle">Science Journal</h2>
-                    <form class="search">
-                        <input type="text" class="search-input" placeholder="Enter keywords, authors, DOI, ORCID etc">
-                        <button type="submit"><img src="img/search-icon.svg" alt="search-icon"></button>
-                    </form>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12"></div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div>
+                            <h1 class="header-title">Alpharabi</h1>
+                            <h2 class="header-subtitle">Science Journal</h2>
+                            <form class="search">
+                                <input type="text" class="search-input" placeholder="Enter keywords, authors, DOI, ORCID etc">
+                                <button type="submit"><img src="img/search-icon.svg" alt="search-icon"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12"></div>
                 </div>
             </div>
         </div>
@@ -62,60 +66,62 @@
         </div>
     </div>
     <div class="header-nav" id="myTopnav">
-        <div class="dropdown">
-            <button class="dropbtn">About the journal 
-              <i class=""><img src="img/down-arrow.svg" alt=""></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="about-the-journal.html">About the journal</a>
-                <a href="about-aims-and-scope.html">Aims and scope</a>
-                <a href="about-journal-beards.html">Journal boards</a>
-                <a href="about-journal-metrics.html">Journal metrics</a>
-                <a href="about-news-and-call.html">News & call for papers</a>
-                <a href="about-editorial-policy.html">Editorial policy</a>
+        <div class="container">
+            <div class="dropdown">
+                <button class="dropbtn">About the journal 
+                  <i class=""><img src="img/down-arrow.svg" alt=""></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="about-the-journal.html">About the journal</a>
+                    <a href="about-aims-and-scope.html">Aims and scope</a>
+                    <a href="about-journal-beards.html">Journal boards</a>
+                    <a href="about-journal-metrics.html">Journal metrics</a>
+                    <a href="about-news-and-call.html">News & call for papers</a>
+                    <a href="about-editorial-policy.html">Editorial policy</a>
+                </div>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn">For Authors 
+                  <i class=""><img src="img/down-arrow.svg" alt=""></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">For Authors</a>
+                  <a href="for-partners.html">Ethical principles and pubblication policy</a>
+                </div>
             </div>
-        </div> 
-        <div class="dropdown">
-            <button class="dropbtn">For Authors 
-              <i class=""><img src="img/down-arrow.svg" alt=""></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">For Authors</a>
-              <a href="for-partners.html">Ethical principles and pubblication policy</a>
+            <div class="dropdown">
+                <button class="dropbtn">Explore: Browse all articles & issues 
+                  <i class=""><img src="img/down-arrow.svg" alt=""></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Explore: Browse all articles & issues</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Explore: Browse all articles & issues</a>
+                </div>
             </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Explore: Browse all articles & issues 
-              <i class=""><img src="img/down-arrow.svg" alt=""></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Explore: Browse all articles & issues</a>
-              <a href="#">Link 2</a>
-              <a href="#">Explore: Browse all articles & issues</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a href="#">Latest issue</a>
+                </button>
             </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">
-                <a href="#">Latest issue</a>
-            </button>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Subscribe: Alerts & RSS feed 
-              <i class=""><img src="img/down-arrow.svg" alt=""></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Subscribe: Alerts & RSS feed</a>
-              <a href="#">Subscribe: Alerts & RSS feed</a>
-              <a href="#">Subscribe: Alerts & RSS feed</a>
+            <div class="dropdown">
+                <button class="dropbtn">Subscribe: Alerts & RSS feed 
+                  <i class=""><img src="img/down-arrow.svg" alt=""></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Subscribe: Alerts & RSS feed</a>
+                  <a href="#">Subscribe: Alerts & RSS feed</a>
+                  <a href="#">Subscribe: Alerts & RSS feed</a>
+                </div>
             </div>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
     <div class="body">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-12">
                     <div class="page-menu-block">
                         <div class="sidebar-block">
                             <h4 class="sidebar-block-title">News & call for papers</h4>
@@ -182,7 +188,7 @@
                         </h4>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-sm-12">
                    <div class="center-block">
                         <div class="article">
                             <h2>News & call for papers</h2>
@@ -231,7 +237,7 @@
                         </div>
                    </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-12">
                     <div class="right-sidebar-block">
                         <div class="sidebar-block sponsors-block">
                             <h4 class="sidebar-block-title">Sponsors</h4>

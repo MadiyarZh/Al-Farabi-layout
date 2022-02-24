@@ -45,11 +45,12 @@ function myFunction() {
 
 function openTabBlockOverview(evt, name) {
     var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tab-block-tabcontent");
+    var currentblock = document.getElementById('overview');
+    tabcontent = currentblock.getElementsByClassName("tab-block-tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tab-block-tablinks");
+    tablinks = currentblock.getElementsByClassName("tab-block-tablinks");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
@@ -62,11 +63,12 @@ document.getElementById("defaultOpen").click();
 
 function openTabBlock(evt, name) {
     var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tab-block-tabcontent");
+    var currentblock = document.getElementById('article');
+    tabcontent = currentblock.getElementsByClassName("tab-block-tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tab-block-tablinks");
+    tablinks = currentblock.getElementsByClassName("tab-block-tablinks");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
