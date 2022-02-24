@@ -18,6 +18,13 @@ header {
 
     .container {
         position: relative;
+
+        .header-center-block {
+            .col-lg-6 {
+                padding-top: 46px;
+                padding-bottom: 46px;
+            }
+        }
     }
     
 }
@@ -217,7 +224,6 @@ header {
         position: relative;
         width: 100%;
         max-width: 570px;
-        margin: 0 auto;
 
         button {
             position: absolute; 
