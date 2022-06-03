@@ -1231,4 +1231,31 @@ footer {
             right: 30px !important;
         }
     }
+
+    footer {
+        padding: 20px 0px;
+
+        .logo-img {
+            margin: 10px auto;
+        }
+
+        .contacts ul {
+            text-align: center;
+        }
+
+        .social-icons,
+        .social-icons span {
+            justify-content: center;
+        }
+
+        .copyright {
+            position: relative;
+            margin-top: 30px;
+            text-align: center;
+
+            p {
+                margin-bottom: 0px;
+            }
+        }
+    }
 }
