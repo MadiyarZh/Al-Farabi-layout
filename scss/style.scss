@@ -1243,9 +1243,12 @@ footer {
             text-align: center;
         }
 
-        .social-icons,
-        .social-icons span {
+        .social-icons{
             justify-content: center;
+
+            span {
+                justify-content: center;
+            }
         }
 
         .copyright {
